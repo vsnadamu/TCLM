@@ -1,0 +1,159 @@
+{
+  "license_manager_config": {
+      "database": {
+        "driver": "{SQL Server}",
+        "primary_host": "IR1ISQL0001.ger.corp.intel.com,3180",
+        "database": "tclm_db_prod",
+        "auth": [
+          "agent-license-manager-prod",
+          "KEYRING:LM_DB_PASSWORD"
+        ],
+        "trusted_connection": "no"
+      },
+    "generation_date": "2022-03-19",
+    "idle_days": 5,
+    "license_buffer_size": 10,
+    "log_dir": "c:\\tmp\\"
+
+  },
+
+  "tc_instance_exclude_list": [
+    "il-prod-n1", "il-prod-n2"
+  ],
+  "tc_instances": {
+    "dev": {
+      "uri": "https://teamcity-dev.devtools.intel.com",
+      "auth": [
+        "sys_tcp",
+        "KEYRING:SYS_TCP"
+      ],
+      "database": {
+        "driver": "{SQL Server}",
+        "primary_host": "HAISQLC165.ger.corp.intel.com,3180",
+        "database": "teamcity_iil",
+        "auth": [
+          "GER\\sys_tcp",
+          "KEYRING:TC_DB_PASSWORD"
+        ],
+        "trusted_connection": "yes"
+      },
+      "license_buffer_size": 5,
+      "idle_days": 5
+    },
+    "il-prod": {
+      "uri": "https://teamcity.iil.intel.com",
+      "auth": [
+        "sys_tcp",
+        "KEYRING:SYS_TCP"
+      ],
+      "database": {
+        "driver": "{SQL Server}",
+        "primary_host": "HAISQLC165.ger.corp.intel.com,3180",
+        "database": "teamcity_iil",
+        "auth": [
+          "GER\\sys_tcp",
+          "KEYRING:TC_DB_PASSWORD"
+        ],
+        "trusted_connection": "yes"
+      },
+      "license_buffer_size": 5,
+      "idle_days": 5
+    },
+    "il-prod-n1": {
+      "uri": "https://teamcity.iil.intel.com",
+      "auth": [
+        "sys_tcp",
+        "KEYRING:SYS_TCP"
+      ],
+      "database": {
+        "driver": "{SQL Server}",
+        "primary_host": "HAISQLC165.ger.corp.intel.com",
+        "port": "3181",
+        "database": "teamcity_iil",
+        "auth": [
+          "GER\\sys_tcp",
+          "KEYRING:TC_DB_PASSWORD"
+        ],
+        "trusted_connection": "yes"
+      },
+      "license_buffer_size": 5,
+      "idle_days": 10
+    },
+    "il-prod-n2": {
+      "uri": "https://teamcity.iil.intel.com",
+      "auth": [
+        "sys_tcp",
+        "KEYRING:SYS_TCP"
+      ],
+      "database": {
+        "driver": "{SQL Server}",
+        "primary_host": "HAISQLC165.ger.corp.intel.com",
+        "port": "3181",
+        "database": "teamcity_iil",
+        "auth": [
+          "GER\\sys_tcp",
+          "KEYRING:TC_DB_PASSWORD"
+        ],
+        "trusted_connection": "yes"
+      },
+      "license_buffer_size": 5
+    },
+    "fm-dev": {
+      "uri": "https://teamcity.iil.intel.com",
+      "auth": [
+        "sys_tcp",
+        "KEYRING:SYS_TCP"
+      ],
+      "database": {
+        "driver": "{SQL Server}",
+        "primary_host": "HAISQLC165.ger.corp.intel.com",
+        "port": "3181",
+        "database": "teamcity_iil",
+        "auth": [
+          "GER\\sys_tcp",
+          "KEYRING:TC_DB_PASSWORD"
+        ],
+        "trusted_connection": "yes"
+      },
+      "license_buffer_size": 5
+    },
+    "fm-dev-n1": {
+      "uri": "https://teamcity.iil.intel.com",
+      "auth": [
+        "sys_tcp",
+        "KEYRING:SYS_TCP"
+      ],
+      "database": {
+        "driver": "{SQL Server}",
+        "primary_host": "HAISQLC165.ger.corp.intel.com",
+        "port": "3181",
+        "database": "teamcity_iil",
+        "auth": [
+          "GER\\sys_tcp",
+          "KEYRING:TC_DB_PASSWORD"
+        ],
+        "trusted_connection": "yes"
+      },
+      "license_buffer_size": 5
+    },
+    "fm-dev-n2": {
+      "uri": "https://teamcity.iil.intel.com",
+      "auth": [
+        "sys_tcp",
+        "KEYRING:SYS_TCP"
+      ],
+      "database": {
+        "driver": "{SQL Server}",
+        "primary_host": "HAISQLC165.ger.corp.intel.com",
+        "port": "3181",
+        "database": "teamcity_iil",
+        "auth": [
+          "GER\\sys_tcp",
+          "KEYRING:TC_DB_PASSWORD"
+        ],
+        "trusted_connection": "yes"
+      },
+      "license_buffer_size": 5
+    }
+  }
+}
